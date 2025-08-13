@@ -4,3 +4,4 @@ target
 Cargo.lock
 .DS_Store
 styles
+src/time_signal/register.rs
