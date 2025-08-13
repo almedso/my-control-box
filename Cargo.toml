@@ -1,0 +1,14 @@
+[package]
+name = "my-control-box"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+wasm-logger = "0.2.0"
+yew = { version = "0.21.0", features = ["csr"] }
+
+control-box = { git = "https://github.com/almedso/control-box.git", branch = "devel", features = [ "std" ]}
+# simulator = { git = "https://github.com/almedso/control-box.git", branch = "devel" }
+simulator = { path = "../simulator" }
+
