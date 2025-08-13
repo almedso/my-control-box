@@ -1,3 +1,5 @@
+const safelist = require("./tailwind_safelist.json");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: 'class',
@@ -10,4 +12,5 @@ module.exports = {
 		require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
 	],
+	safelist,
 };
