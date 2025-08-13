@@ -9,6 +9,6 @@ wasm-logger = "0.2.0"
 yew = { version = "0.21.0", features = ["csr"] }
 
 control-box = { git = "https://github.com/almedso/control-box.git", branch = "devel", features = [ "std" ]}
-# simulator = { git = "https://github.com/almedso/control-box.git", branch = "devel" }
-simulator = { path = "../simulator" }
+simulator = { git = "https://github.com/almedso/control-box.git", branch = "devel" }
+
 
