@@ -1,6 +1,8 @@
-# Simulator Extension
+# Control Box Simulator Extension
 
-This project extends the simulator by adding support for signals and elements using [Yew](https://yew.rs/), [Trunk](https://trunkrs.dev/), and [TailwindCSS](https://tailwindcss.com/).
+This project extends the simulator by adding support for **custom signals** and **custgom elements** using [Yew](https://yew.rs/), [Trunk](https://trunkrs.dev/), and [TailwindCSS](https://tailwindcss.com/).
+
+This repository is treated as working example that shows how an custom signal and a custom element is added.
 
 ## Features
 
@@ -31,7 +33,6 @@ This project extends the simulator by adding support for signals and elements us
     npm run build:css
     ```
 
-
 2. **Run the development server:**
     ```bash
     trunk serve
@@ -49,8 +50,8 @@ This project extends the simulator by adding support for signals and elements us
 
 ## Customization
 
-- Add new signals in `src/signals.rs`
-- Add new elements in `src/elements.rs`
+- Add new signals in `src/time_signal`
+- Add new elements in `src/plant`
 - Update styles in `./index.css`
 
 ## License
