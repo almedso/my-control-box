@@ -1,10 +1,10 @@
 use input_rs::yew::Input;
 use yew::prelude::*;
 
-use simulator::components::time_signal::registry::{register_time_signal, YewTimeSignal};
-use simulator::components::time_signal::BoxedTimeSignalDialogProps;
+use cb_simulator_yew::time_signal::registry::{register_time_signal, YewTimeSignal};
+use cb_simulator_yew::components::time_signal::BoxedTimeSignalDialogProps;
 use super::random::RandomSignal;
-use control_box::signal::{DynTimeSignal, TimeSignal};
+use cb_simulation_util::signal::{DynTimeSignal, TimeSignal};
 
 use log::info;
 
@@ -33,7 +33,7 @@ impl YewTimeSignal for YewRandom {
         html! { <> { self.signal.short_type_name() } </> }
     }
 
-    fn signal(&self) -> Box<dyn control_box::signal::DynTimeSignal<f64> + Send + Sync> {
+    fn signal(&self) -> Box<dyn cb_simulation_util::signal::DynTimeSignal<f64> + Send + Sync> {
         Box::new(self.signal.clone())
     }
 }

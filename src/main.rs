@@ -1,5 +1,5 @@
-use simulator::components::time_signal::register_build_in_time_signals;
-use simulator::app;
+use cb_simulator_yew::register_build_in;
+use cb_simulator_yew::app;
 use yew::Renderer;
 use log::info;
 
@@ -10,7 +10,7 @@ fn main() {
     wasm_logger::init(wasm_logger::Config::default());
 
     info!("Register *Plugins* for Yew app");
-    register_build_in_time_signals();
+    register_build_in();
     register_local_time_signals();
 
     info!("Start Yew app");
