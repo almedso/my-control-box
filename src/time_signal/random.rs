@@ -4,7 +4,7 @@
 //!
 //! ```rust
 //! use ndarray::{Array, Ix1};
-//! use my_cb_simulation_util::time_signal::random::RandomSignal;
+//! use my_control_box::time_signal::random::RandomSignal;
 //! use cb_simulation_util::signal::{TimeRange, TimeSignal};
 //!
 //! fn main () {
