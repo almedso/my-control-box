@@ -1,6 +1,6 @@
 [package]
 name = "my-control-box"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 
 [dependencies]
@@ -10,7 +10,7 @@ yew = { version = "0.21.0", features = ["csr"] }
 input-rs = { version = "0.2.5", features = ["yew"] }
 
 cb-simulation-util = { git = "https://github.com/control-box/cb-simulation-util.git", branch = "main", features = [ "std" ]}
-cb-simulator-yew = { git = "https://github.com/control-box/cb-simulator-yew.git", branch = "main" }
+cb-simulator-yew = { git = "https://github.com/control-box/cb-simulator-yew.git", branch = "main", features = ["customized_about"]}
 
 rand = "0.9.2"
 num-traits = "0.2.19"
@@ -18,5 +18,4 @@ ndarray = "0.15.6"
 log = "0.4.27"
 # required to make rand crate work in wasm context
 getrandom = { version = "0.3.3", features = ["wasm_js"] }
-
 
